@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>九龙dragon</title>
-
 </head>
 <body>
 	<div class="header">
@@ -115,27 +114,24 @@
 		<div class="leftside">	
 			<h2>侧栏标题</h2>
 			<h2>侧栏注册窗口标题</h2>
-			<form>
-				输入邮箱: <input type="text" name="firstname"><br><br>
-				<tips>邮箱地址按格式输入</tips><br><br>
-				输入密码: <input type="password" name="lastname">
-				重复输入密码: <input type="password" name="lastname"><br><br>
-				<tips>密码请为6-16英文或数字</tips><br><br>
-
-				性别：<input type="radio" name="sex" value="male">Male
-				<input type="radio" name="sex" value="female">Female<br><br>
-
-				城市：<select name="city">
-				<option value="北京" selected>北京</option>
-				<option value="苏州">苏州</option>
-				<option value="上海">上海</option>
-				</select><br><br>
-
-				爱好：<input type="checkbox" name="vehicle" value="Bike">运动
-				<input type="checkbox" name="vehicle" value="Art">艺术
-				<input type="checkbox" name="vehicle" value="Sci">科学<br><br>
-				
-				个人描述：<textarea rows="5" cols="30">请输入一句话对自己描述</textarea><br>
+			<form action="#" method="post">
+				<label for="email">输入邮箱: <input type="text" name="firstname"></label>
+				<p>邮箱地址按格式输入</p>
+				<label for="password"> 输入密码: <input type="password" name="lastname"></label>
+				<label for="password2">重复输入密码: <input type="password" name="lastname"></label>
+				<p>密码请为6-16英文或数字</p>
+				<label for="sex"> 性别：<input type="radio" name="sex" value="male">Male<input type="radio" name="sex" value="female">Female</label>
+				<label for="city"> 城市：<select name="city">
+					<option value="北京" selected>北京</option>
+					<option value="苏州">苏州</option>
+					<option value="上海">上海</option>
+				</select></label>
+				<label for="hobby">爱好：
+					<input type="checkbox" name="vehicle" value="Bike">运动
+					<input type="checkbox" name="vehicle" value="Art">艺术
+					<input type="checkbox" name="vehicle" value="Sci">科学
+				</label>
+				<label for="intro">个人描述：<textarea rows="5" cols="30">请输入一句话对自己描述</textarea></label>
 				<input type="submit" value="确认提交"><br>
 			</form> 
 		</div>
@@ -146,6 +142,5 @@
 			</p>
 		</div>
 	</div>
-
 </body>
 </html>
