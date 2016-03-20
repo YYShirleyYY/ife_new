@@ -33,24 +33,106 @@
 }
 .article1,.article2,.article3,.picture,.aside{
 	margin: 20px;
+	padding: 20px;
 	background-color: #fff;
 	-moz-box-shadow: 2px 2px 8px #909090;/*firefox*/
 	-webkit-box-shadow: 2px 2px 8px #909090;/*safari或chrome*/
 	box-shadow:2px 2px 8px #909090;/*opera或ie9*/
 }
 h2{
-	margin: 20px;
+	padding: 15px;
 }
 h3{
-	margin: 10px 20px 0 0;
+	padding: 8px 20px;
 	color: #666;
 }
-p span{
+h4{
+	padding: 8px 20px;
 	font-size: 12px;
 	color: #666;
+	font-weight:normal;
+}
+.article1 p,.article2 p,.article3 p{
+	 padding: 8px 20px;
+	 text-indent:2em;
+ }
+img{
+	padding: 8px 20px;
+}
+ul,ol{
+	padding: 8px 60px;
+}
+ul{
+	list-style-type:none;
+}
+.pic{
+	position: relative;
+	left: 50px;
+	text-align: center;
+	width: 300px;
+	height: 180px;
+	margin: 10px;
+	border: 1px solid #9ba2ac;
+}
+table,th,td{
+	border: 1px solid #ccc;
+	font-size: 14px;
+	padding: 4px 4px;
+}
+table{
+	border-collapse:collapse;
+	width: 100%;
+}
+table thead{
+	background-color: #333;
+	color: #fff;
+	font-weight: 800;
+}
+table tbody{
+	background-color: #fff;
+	color: #000;
+}
+table tfoot{
+	background-color: #ccc;
+	color: #000;
+	font-weight: 700;
+}
+.aside h3{
+	border-left: 3px solid #ccc;
+	color: #000;
+}
+.aside form{
+	line-height: 34px;
+	font-size: 16px;
+}
+.aside label{
+	position: relative;
+	margin-left: 100px;
+}
+fieldset{
+	border: 0;
+}
+legend{
+	display: none;
+}
+.submit{
+	font-size: 16px;
+	border: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #3553cf;
+	color: #fff;
+	border-radius: 12px;
+}
+.submit:hover{
+	background-color: #0028cd;
 }
 .footer{
 	background-color: #000;
 	height: 50px;
 	width: 100%;
+}
+.footer p{
+	color: #fff;
+	text-align: center;
 }
