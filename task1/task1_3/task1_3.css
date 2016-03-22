@@ -26,10 +26,13 @@ div{
 
 .right_col{
 	width: 120px;
+	float: right;
+	overflow: auto;
 }
 
 .intro{
-	width: auto;
+
+	/*width: auto;*/
 	margin-left:220px;
 	margin-right:140px;
 }

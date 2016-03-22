@@ -53,9 +53,9 @@ h4{
 	font-weight:normal;
 }
 .article1 p,.article2 p,.article3 p{
-	 padding: 8px 20px;
-	 text-indent:2em;
- }
+	padding: 8px 20px;
+	text-indent:2em;
+}
 img{
 	padding: 8px 20px;
 }
@@ -105,16 +105,33 @@ table tfoot{
 	line-height: 34px;
 	font-size: 16px;
 }
-.aside label{
-	position: relative;
-	margin-left: 100px;
-}
 fieldset{
 	border: 0;
+	position: relative;
 }
 legend{
 	display: none;
 }
+.form-title{
+	text-align: right;
+	position: absolute;
+	right: 70%;
+}
+.form_hint{
+
+}
+.form-content{
+	/*text-align: right;*/
+	/*position: absolute;*/
+	/*left: 40%;*/
+}
+.form_hint{
+	color: #aaa;
+	font-size: 14px;
+	position: relative;
+	top:-5px;
+}
+
 .submit{
 	font-size: 16px;
 	border: 0;
@@ -131,6 +148,16 @@ legend{
 	background-color: #000;
 	height: 50px;
 	width: 100%;
+	/*line-height: 50px;*/
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
 }
 .footer p{
 	color: #fff;
