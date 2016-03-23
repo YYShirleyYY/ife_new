@@ -131,43 +131,46 @@
 			<h3>侧栏标题</h3>
 		</header>
 		<form action="#" method="post">
-			<fieldset>
-				<legend>邮箱</legend>
+			<div class="field">
 				<label for="email" class="form-title">输入邮箱:</label>
-				<input type="text" class="form-content" id="email" placeholder="这是一个文本输入框" required=""><br>
+				<input type="text" class="form-content" placeholder="这是一个文本输入框" required=""><br>
 				<span class="form_hint">邮箱地址按格式输入</span>
-			</fieldset>
-			<fieldset>
-				<legend>密码</legend>
+			</div>
+			<div class="field">
 				<label for="password" class="form-title">输入密码:</label>
 				<input type="password" class="form-content" id="password" pattern="[a-zA-Z0-9]{6,16}" placeholder="6-16位字母或数字" required><br>
 				<label for="password2" class="form-title">重复输入密码:</label>
 				<input type="password" class="form-content" id="password2" pattern="[a-zA-Z0-9]{6,16}" placeholder="6-16位字母或数字" required><br>
 				<span class="form_hint">密码请为6-16英文或数字</span>
-			</fieldset>
-			<fieldset>
-				<legend>个人信息</legend>
-				<label for="gender" class="form-title">性别：</label>
+			</div>
+			<div class="field">
+				<label class="form-title">性别：</label>
 				<div class="form-content">
 					<input type="radio" name="sex" value="male">Male
-					<input type="radio" name="sex" value="female">Female<br>
-				</div>
+					<input type="radio" name="sex" value="female">Female
+				</div><br>
+			</div>
+			<div class="field">
 				<label for="city" class="form-title"> 城市：</label>
 				<select name="city" class="form-content" id="city">
 					<option value="beijing" selected>北京</option>
 					<option value="suzhou">苏州</option>
 					<option value="shanghai">上海</option>
 				</select><br>
+			</div>
+			<div class="field">
 				<label for="hobby" class="form-title">爱好：</label>
 				<div class="form-content">
 					<input type="checkbox" name="hobby" value="Bike">运动
 					<input type="checkbox" name="hobby" value="Art">艺术
 					<input type="checkbox" name="hobby" value="Sci">科学
-				</div>
+				</div><br>
+			</div>
+			<div class="field clearfix">
 				<label for="intro" class="form-title">个人描述：</label>
-				<textarea class="form-content" rows="5" cols="80" placeholder="请在这里输入你的个人简介">请输入一句话对自己描述</textarea>
-			</fieldset>
-			<input class="submit" type="submit" value="确认提交"><br>
+				<textarea class="form-content" rows="5" cols="80" placeholder="请在这里输入你的个人简介">请输入一句话对自己描述</textarea><br>
+			</div>
+			<input class="submit" type="submit" value="确认提交">
 		</form>
 	</div>
 </div>

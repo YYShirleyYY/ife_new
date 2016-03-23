@@ -105,33 +105,35 @@ table tfoot{
 	line-height: 34px;
 	font-size: 16px;
 }
-fieldset{
+.field {
 	border: 0;
 	position: relative;
-}
-legend{
-	display: none;
 }
 .form-title{
 	text-align: right;
 	position: absolute;
 	right: 70%;
 }
-.form_hint{
-
-}
 .form-content{
-	/*text-align: right;*/
-	/*position: absolute;*/
-	/*left: 40%;*/
+	display: inline-block;
+	text-align: left;
+	position: absolute;
+	left: 40%;
+}
+.clearfix::after {
+	clear: both;
+	display: table;
+	content: '';
+	line-height: 0;
 }
 .form_hint{
+	text-align: left;
+	position: relative;
+	left: 40%;
 	color: #aaa;
 	font-size: 14px;
-	position: relative;
-	top:-5px;
+	top:-10px;
 }
-
 .submit{
 	font-size: 16px;
 	border: 0;

@@ -27,7 +27,6 @@ div{
 .right_col{
 	width: 120px;
 	float: right;
-	overflow: auto;
 }
 
 .intro{
@@ -40,4 +39,15 @@ div{
 .logo{
 	border: 1px solid #999;	
 	margin: 10px 0;
+}
+
+.clearfix::after {
+	clear: both;
+	display: table;
+	content: '';
+	line-height: 0;
+}
+
+.team {
+	vertical-align: top;
 }
