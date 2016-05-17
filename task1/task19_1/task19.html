@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IFE JavaScript Task 19</title>
+        <style>
+            #content {
+                display: -webkit-flex; /* for webkit */
+                display: flex;
+                width: 500px;
+                height: 150px;
+                align-items: flex-end;
+            }
+            #content div {
+                display: inline-block;
+                font-size: 30px;
+                text-align: center;
+                padding: 0 15px;
+                margin: 2px 2px;
+                height: 50px;
+                line-height: 50px;
+                background-color: red;
+                color: #FFFFFF;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="handle">
+            <input id="num_input" type="text">
+            <input type="button" value="左侧入">
+            <input type="button" value="右侧入" style="margin-right: 25px">
+            <input type="button" value="左侧出">
+            <input type="button" value="右侧出">
+            <input type="button" value="排序">
+        </div>
+        <div id="content">
+        </div>
+
+    <script src="task19.js"></script>
+    </body>
+</html>
