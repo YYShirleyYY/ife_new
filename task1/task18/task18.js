@@ -12,9 +12,8 @@ window.onload=function(){
             this.str.map(function (item) {
                 string+="<div>"+parseInt(item)+"</div>";
             });
-            //each(this.str, function(item){string += ("<div>" + parseInt(item) + "</div>")});
             container.innerHTML = string;
-            addDivDelEvent();
+            //addDivDelEvent();
         },
         leftPush: function (num) {
             this.str.unshift(num);
@@ -46,7 +45,8 @@ window.onload=function(){
             this.paint();
         }
     }
-    
+
+    //为container中的每个div绑定删除函数
     function addDivDelEvent() {
         for (var cur = 0; cur < container.childNodes.length; cur++) {
             //这里要使用闭包，否则永远绑定到指定div上的delete函数的参数永远等于跳出时的cur值(length);
