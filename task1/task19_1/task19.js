@@ -104,28 +104,42 @@ window.onload=function(){
         var i=len-1;
         var j=0;
         Clock=setInterval(function(){
+            console.log("-----count is "+i);
             if(i<1){
+                console.log("count is "+i);
+                console.log("length is "+len);
                 clearInterval(Clock);
             }
             if(j==i){
+                console.log("-11--j is "+j);
+                console.log("-11--count is "+i);
                 j=0;
                 --i;
+                console.log("-22--j is "+j);
+                console.log("-22--count is "+i);
             }
+            console.log("str[i] is "+queue.str[j]);
+            console.log("str[i+1] is "+queue.str[j+1]);
             if(queue.str[j]>queue.str[j+1]){
+                console.log("length is "+len);
+                console.log("j is "+j);
+                console.log("count is "+i);
+                console.log("length is "+len);
+                console.log("str[i] is "+queue.str[j]);
+                console.log("str[i+1] is "+queue.str[j+1]);
                 var temp=queue.str[j];
                 queue.str[j]=queue.str[j+1];
                 queue.str[j+1]=temp;
                 queue.paint();
             }
             ++j;
+
         },100)
     }
-
-
-
+    
     buttonList[1].addEventListener( "click", function() {
         console.log("leftPush");
-        var input = buttonList[0].value;
+        var input = parseInt(buttonList[0].value);
         if ((/^[0-9]+$/).test(input)) {
             queue.leftPush(input);
         }
@@ -135,7 +149,7 @@ window.onload=function(){
     },false);
     buttonList[2].addEventListener( "click", function() {
         console.log("rightPush");
-        var input = buttonList[0].value;
+        var input = parseInt(buttonList[0].value);
         if ((/^[0-9]+$/).test(input)) {
             queue.rightPush(input);
         }
